@@ -122,6 +122,10 @@
             padding-right: 10px;
             text-align: right;
         }
+
+        .ptable tbody tr.divider td {
+                border-bottom: 2px solid #36304a;
+        }
     </style>
 </head>
 
@@ -141,7 +145,7 @@
                 </thead>
                 <tbody id="priorityTableBody">
 
-                    <tr>
+                    <tr class="divider">
                         <td class="column1">Main resource (HTML)</td>
                         <td><img src="images/chrome.png" width="32" height="32"><img
                                 src="images/firefox.png" width="32" height="32"><img
@@ -217,7 +221,7 @@
                                 style="display: inline-block; width: 32px; height: 32px;"></span></td>
                     </tr>
 
-                    <tr>
+                    <tr class="divider">
                         <td class="column1">Font (font-face)</td>
                         <td><img src="images/chrome.png" width="32" height="32"><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span><span
@@ -616,7 +620,7 @@
                                 style="display: inline-block; width: 32px; height: 32px;"></span></td>
                     </tr>
 
-                    <tr>
+                    <tr class="divider">
                         <td class="column1">JS (bottom fp@low)</td>
                         <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span><span
@@ -806,7 +810,7 @@
                                 style="display: inline-block; width: 32px; height: 32px;"></span></td>
                     </tr>
 
-                    <tr>
+                    <tr class="divider">
                         <td class="column1">CSS (bottom fp@low)</td>
                         <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span><span
@@ -883,7 +887,7 @@
                     </tr>
 
                     <tr>
-                        <td class="column1">Image</td>
+                        <td class="column1">Image (first 5)</td>
                         <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span></td>
@@ -902,7 +906,7 @@
                     </tr>
 
                     <tr>
-                        <td class="column1">Image (fp@high)</td>
+                        <td class="column1">Image (first 5 fp@high)</td>
                         <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span></td>
@@ -921,7 +925,7 @@
                     </tr>
 
                     <tr>
-                        <td class="column1">Image (fp@low)</td>
+                        <td class="column1">Image (first 5 fp@low)</td>
                         <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span></td>
@@ -977,7 +981,7 @@
                                 style="display: inline-block; width: 32px; height: 32px;"></span></td>
                     </tr>
 
-                    <tr>
+                    <tr class="divider">
                         <td class="column1">Image (lazy fp@low)</td>
                         <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span><span
@@ -1052,45 +1056,6 @@
                                 style="display: inline-block; width: 32px; height: 32px;"></span><span
                                 style="display: inline-block; width: 32px; height: 32px;"></span></td>
                     </tr>
-
-                    <tr>
-                        <td class="column1">Fetch (manual)</td>
-                        <td><img src="images/chrome.png" width="32" height="32"><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span><img
-                                src="images/safari.png" width="32" height="32"></td>
-                        <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span></td>
-                        <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span></td>
-                        <td><span style="display: inline-block; width: 32px; height: 32px;"></span><img
-                                src="images/firefox.png" width="32" height="32"><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span></td>
-                        <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span></td>
-                    </tr>
-
-                    <tr>
-                        <td class="column1">Fetch (invalid)</td>
-                        <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span></td>
-                        <td><img src="images/chrome.png" width="32" height="32"><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span></td>
-                        <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span><img
-                                src="images/safari.png" width="32" height="32"></td>
-                        <td><span style="display: inline-block; width: 32px; height: 32px;"></span><img
-                                src="images/firefox.png" width="32" height="32"><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span></td>
-                        <td><span style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span><span
-                                style="display: inline-block; width: 32px; height: 32px;"></span></td>
-                    </tr>
-
                 </tbody>
             </table>
         </div>
